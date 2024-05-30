@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#counter {
+    font-size: 18px;
+}
+
+#saved {
+    font-size: 18px;
+    color: green;
+    cursor: pointer;
+}
+
+#goToContainer {
+    display: flex;
+    align-items: center;
+}
+
+#goToInput {
+    width: 60px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#goToButton {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    padding-bottom: 60px; /* to avoid overlapping with bottom buttons */
+}
+
+#imageDisplay, #videoDisplay {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#fileInput {
+    margin-top: 20px;
+}
+
+#loading {
+    font-size: 24px;
+    color: #000;
+    margin-top: 20px;
+}
+
+#linkDisplay {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.bottom-buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}

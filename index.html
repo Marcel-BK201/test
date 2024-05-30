@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Link Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div id="counter">1 de 1</div>
+        <button id="saved">Saved (0)</button>
+        <div id="goToContainer">
+            <input type="number" id="goToInput" min="1" placeholder="Go to image">
+            <button id="goToButton">Go</button>
+        </div>
+    </div>
+    <div class="container">
+        <input type="file" id="fileInput" accept=".txt">
+        <img id="imageDisplay" src="" alt="Image will be displayed here">
+        <video id="videoDisplay" controls style="display: none;"></video>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="linkDisplay" style="margin-top: 20px;"></div>
+    </div>
+    <div class="bottom-buttons">
+        <button id="prevButton">Prev</button>
+        <button id="saveButton">Save</button>
+        <button id="delButton">Del</button>
+        <button id="nextButton">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
